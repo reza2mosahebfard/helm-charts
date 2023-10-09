@@ -23,15 +23,16 @@ spec:
           command:
             - iperf3
             - -s
-            - -p 40000
+            - -p 40001
             - -i 1
             - --forceflush
             {{- if .Values.verbose }}
             - -V
             {{- end }}
+          resources: {{ toYaml .Values.resources | nindent 12 }}
           ports:
             - name: iperf3
-              containerPort: 40000
+              containerPort: 40001
               protocol: TCP
       restartPolicy: Always
 status: {}
