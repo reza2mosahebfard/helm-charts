@@ -3,7 +3,7 @@ service:
   # mandatory with enabled service. Will be the ip the LoadBalancer service binds to
   # externalIp:
   # the port to bind on the service, if enabled.
-  port: 40000
+  port: 40001
 # set to true for verbose logging
 verbose: false
 # change this to set the number of replicas
